@@ -1,0 +1,22 @@
+{
+  "name": "unipune-watch",
+  "version": "1.0.0",
+  "description": "Playwright watcher for SPPU examination circulars / timetables / exam form dates, with a Telegram bot",
+  "type": "module",
+  "scripts": {
+    "setup": "playwright install chromium",
+    "scrape": "node scrape.js",
+    "scrape:fast": "node scrape.js --fast",
+    "test": "node test.js",
+    "scrape:exam": "node scrape.js --exam-only",
+    "bot": "node bot.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@grammyjs/auto-retry": "^2.0.2",
+    "grammy": "^1.30.0",
+    "playwright": "^1.48.0"
+  }
+}
